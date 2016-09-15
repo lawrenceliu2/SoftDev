@@ -1,4 +1,8 @@
-   CLASSES =  {
+import random
+
+#print (random.randint(0,5))
+
+CLASSES =  {
     4: [ 'Ayman', 'Shaeq', 'Patrick', 'Yvonne', 'Wilson',
          'Brian', 'Farhan', 'Janet', 'Harry', 'Kevin',
          'Nicholas', 'Jason', 'Yikai', 'Emma', 'Kenneth',
@@ -19,11 +23,19 @@
         'Brandon', 'Nicole', 'Brian', 'Issac', 'Seiji', 'Lorenz']
 }
 
-       
-        
-Name (4)
-Name (8)
-Name (9)
-Name (4)
-Name (8)
-Name (9)
+
+def pickName (period):
+    if period == 4:
+        return random.choice(CLASSES[4])
+    if period == 8:
+        return random.choice(CLASSES[8])
+    else:
+        return random.choice(CLASSES[9])
+
+print (pickName(4))
+print (pickName(8))
+print (pickName(9))
+print ()
+print (pickName(4))
+print (pickName(8))
+print (pickName(9))
